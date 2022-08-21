@@ -12,6 +12,7 @@ import GridItem from "/components/Grid/GridItem.js";
 import InfoArea from "/components/InfoArea/InfoArea.js";
 
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js";
+import { CalendarToday, MapOutlined, PeopleAltOutlined } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -21,13 +22,15 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+          <h2 className={classes.title}>Sobre o evento</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            A Olimpíada Brasileira de Satélites MCTI é uma Olimpíada Científica
+            de abrangência nacional, concebida pelo Ministério da Ciência,
+            Tecnologia e Inovações, e organizada pela Universidade Federal de
+            São Carlos (UFSCar) em conjunto com a Agência Espacial Brasileira
+            (AEB/MCTI), o Instituto Nacional de Pesquisas Espaciais (INPE/MCTI)
+            e a Escola de Engenharia de São Carlos (EESC), da Universidade de
+            São Paulo (USP).
           </h5>
         </GridItem>
       </GridContainer>
@@ -35,27 +38,27 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="Onde acontecerá?"
+              description="O evento será realizado no Câmpus 2 da Universidade Federal de Goiás, em Goiânia - GO."
+              icon={MapOutlined}
               iconColor="info"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
+              title="Quando?"
+              description="O evento será realizado no dia 17 de Setembro de 2022."
+              icon={CalendarToday}
               iconColor="success"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
+              title="Quem pode participar?"
+              description="O evento é aberto a todos os estudantes e público geral, de todo o Brasil."
+              icon={PeopleAltOutlined}
               iconColor="danger"
               vertical
             />

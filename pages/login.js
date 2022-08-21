@@ -35,7 +35,7 @@ export default function LoginPage(props) {
       <Header
         absolute
         color="transparent"
-        brand="NextJS Material Kit"
+        brand="OBSAT Centro-Oeste"
         rightLinks={<HeaderLinks />}
         {...rest}
       />

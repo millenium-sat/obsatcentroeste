@@ -53,7 +53,7 @@ export default function SectionDownload() {
             <h4>
               We've just launched{" "}
               <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                NextJS Material Kit PRO{" "}
+                OBSAT Centro-Oeste PRO{" "}
               </a>
               .It has a huge number of components, sections and example pages.
               Start Your Development With A Badass Material-UI and NexJS Kit
@@ -67,7 +67,7 @@ export default function SectionDownload() {
               href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-download-section"
               target="_blank"
             >
-              NextJS Material Kit PRO
+              OBSAT Centro-Oeste PRO
             </Button>
             <Button
               color="rose"

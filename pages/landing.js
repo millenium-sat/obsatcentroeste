@@ -34,12 +34,12 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="NextJS Material Kit"
+        brand="OBSAT Centro-Oeste"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: "white"
+          color: "white",
         }}
         {...rest}
       />
@@ -47,23 +47,24 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <img
+                src="/img/logobsat.png"
+                alt="..."
+                className={classes.container}
+              ></img>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
-              </h4>
+                Seja bem vindo ao website da 1º Olimpíada Brasileira de Satélites MCTI - Regional Centro-Oeste, evento que acontecerá no dia 17 de Setembro de 2022, no câmpus 2 da Universidade Federal de Goiás! 
+             </h4>
               <br />
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fas fa-play" />
-                Watch video
+                ACOMPANHAR AO VIVO!
               </Button>
             </GridItem>
           </GridContainer>
