@@ -13,133 +13,110 @@ import CustomTabs from "/components/CustomTabs/CustomTabs.js";
 
 import styles from "/styles/jss/nextjs-material-kit/pages/componentsSections/tabsStyle.js";
 
+
 const useStyles = makeStyles(styles);
 
 export default function SectionTabs() {
   const classes = useStyles();
   return (
-    <div className={classes.section}>
-      <div className={classes.container}>
-        <div id="nav-tabs">
-          <h3>Navigation Tabs</h3>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <h3>
-                <small>Tabs with Icons on Card</small>
-              </h3>
-              <CustomTabs
-                headerColor="primary"
-                tabs={[
-                  {
-                    tabName: "Profile",
-                    tabIcon: Face,
-                    tabContent: (
-                      <p className={classes.textCenter}>
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities. I will be the leader of a
-                        company that ends up being worth billions of dollars,
-                        because I got the answers. I understand culture. I am
-                        the nucleus.
-                      </p>
-                    )
-                  },
-                  {
-                    tabName: "Messages",
-                    tabIcon: Chat,
-                    tabContent: (
-                      <p className={classes.textCenter}>
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. I will be the leader of a company
-                        that ends up being worth billions of dollars, because I
-                        got the answers. I understand culture. I am the nucleus.
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at.
-                      </p>
-                    )
-                  },
-                  {
-                    tabName: "Settings",
-                    tabIcon: Build,
-                    tabContent: (
-                      <p className={classes.textCenter}>
-                        think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities. I will be the leader of a
-                        company that ends up being worth billions of dollars,
-                        because I got the answers. I understand culture. I am
-                        the nucleus.
-                      </p>
-                    )
-                  }
-                ]}
-              />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={6}>
-              <h3>
-                <small>Tabs on Plain Card</small>
-              </h3>
-              <CustomTabs
-                plainTabs
-                headerColor="danger"
-                tabs={[
-                  {
-                    tabName: "Home",
-                    tabContent: (
-                      <p className={classes.textCenter}>
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities. I will be the leader of a
-                        company that ends up being worth billions of dollars,
-                        because I got the answers. I understand culture. I am
-                        the nucleus.
-                      </p>
-                    )
-                  },
-                  {
-                    tabName: "Updates",
-                    tabContent: (
-                      <p className={classes.textCenter}>
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. I will be the leader of a company
-                        that ends up being worth billions of dollars, because I
-                        got the answers. I understand culture. I am the nucleus.
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at.
-                      </p>
-                    )
-                  },
-                  {
-                    tabName: "History",
-                    tabContent: (
-                      <p className={classes.textCenter}>
-                        think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities. I will be the leader of a
-                        company that ends up being worth billions of dollars,
-                        because I got the answers. I understand culture. I am
-                        the nucleus.
-                      </p>
-                    )
-                  }
-                ]}
-              />
-            </GridItem>
-          </GridContainer>
-        </div>
-      </div>
+
+    <div id="nav-tabs">
+      <GridContainer>
+        <GridItem xs={12} sm={12} md={12}>
+        
+          <h3 style={{ color: "white", textAlign: "center"}}>
+            <big>17 DE SETEMBRO DE 2022 -- 07:00 às 17:30</big>
+          </h3>
+          <CustomTabs
+            headerColor="danger"
+            tabs={[
+              {
+                tabName: "7:00 - 7:30",
+                //tabIcon: Face,
+                tabContent: (
+                  <p className={classes.textCenter}>
+                    Vitae. Class semper pede senectus. Interdum arcu posuere Natoque. Nullam nisl integer morbi phasellus facilisi semper tempor condimentum velit eu. Potenti morbi dui suscipit inceptos pretium. Lacinia viverra Ullamcorper, mauris semper aliquam cras curae; elit justo est est penatibus proin mollis molestie vestibulum nullam auctor ante mollis. Lorem praesent pretium Montes metus mattis taciti et. Cum class ullamcorper pulvinar neque penatibus cubilia. Pellentesque suspendisse. Laoreet ullamcorper ipsum ipsum. Elit nisl vivamus fringilla phasellus condimentum erat hac iaculis egestas faucibus vulputate nonummy pretium pretium senectus aliquet, feugiat mauris ipsum. Taciti sociis mus orci. Posuere, ligula ac amet. Ridiculus primis sociosqu, diam.
+                  </p>
+                )
+              },
+              {
+                tabName: "8:00 - 8:30",
+                //tabIcon: Chat,
+                tabContent: (
+                  <p className={classes.textCenter}>
+                    Vitae. Class semper pede senectus. Interdum arcu posuere Natoque. Nullam nisl integer morbi phasellus facilisi semper tempor condimentum velit eu. Potenti morbi dui suscipit inceptos pretium. Lacinia viverra Ullamcorper, mauris semper aliquam cras curae; elit justo est est penatibus proin mollis molestie vestibulum nullam auctor ante mollis. Lorem praesent pretium Montes metus mattis taciti et. Cum class ullamcorper pulvinar neque penatibus cubilia. Pellentesque suspendisse. Laoreet ullamcorper ipsum ipsum. Elit nisl vivamus fringilla phasellus condimentum erat hac iaculis egestas faucibus vulputate nonummy pretium pretium senectus aliquet, feugiat mauris ipsum. Taciti sociis mus orci. Posuere, ligula ac amet. Ridiculus primis sociosqu, diam.
+                  </p>
+                )
+              },
+              {
+                tabName: "9:00 - 11:30",
+                //tabIcon: Face,
+                tabContent: (
+                  <p className={classes.textCenter}>
+                    Vitae. Class semper pede senectus. Interdum arcu posuere Natoque. Nullam nisl integer morbi phasellus facilisi semper tempor condimentum velit eu. Potenti morbi dui suscipit inceptos pretium. Lacinia viverra Ullamcorper, mauris semper aliquam cras curae; elit justo est est penatibus proin mollis molestie vestibulum nullam auctor ante mollis. Lorem praesent pretium Montes metus mattis taciti et. Cum class ullamcorper pulvinar neque penatibus cubilia. Pellentesque suspendisse. Laoreet ullamcorper ipsum ipsum. Elit nisl vivamus fringilla phasellus condimentum erat hac iaculis egestas faucibus vulputate nonummy pretium pretium senectus aliquet, feugiat mauris ipsum. Taciti sociis mus orci. Posuere, ligula ac amet. Ridiculus primis sociosqu, diam.
+                  </p>
+                )
+              },
+              {
+                tabName: "12:00 - 12:30",
+                //tabIcon: Face,
+                tabContent: (
+                  <p className={classes.textCenter}>
+                    Vitae. Class semper pede senectus. Interdum arcu posuere Natoque. Nullam nisl integer morbi phasellus facilisi semper tempor condimentum velit eu. Potenti morbi dui suscipit inceptos pretium. Lacinia viverra Ullamcorper, mauris semper aliquam cras curae; elit justo est est penatibus proin mollis molestie vestibulum nullam auctor ante mollis. Lorem praesent pretium Montes metus mattis taciti et. Cum class ullamcorper pulvinar neque penatibus cubilia. Pellentesque suspendisse. Laoreet ullamcorper ipsum ipsum. Elit nisl vivamus fringilla phasellus condimentum erat hac iaculis egestas faucibus vulputate nonummy pretium pretium senectus aliquet, feugiat mauris ipsum. Taciti sociis mus orci. Posuere, ligula ac amet. Ridiculus primis sociosqu, diam.
+                  </p>
+                )
+              },
+              {
+                tabName: "13:00 - 13:30",
+                //tabIcon: Face,
+                tabContent: (
+                  <p className={classes.textCenter}>
+                    Vitae. Class semper pede senectus. Interdum arcu posuere Natoque. Nullam nisl integer morbi phasellus facilisi semper tempor condimentum velit eu. Potenti morbi dui suscipit inceptos pretium. Lacinia viverra Ullamcorper, mauris semper aliquam cras curae; elit justo est est penatibus proin mollis molestie vestibulum nullam auctor ante mollis. Lorem praesent pretium Montes metus mattis taciti et. Cum class ullamcorper pulvinar neque penatibus cubilia. Pellentesque suspendisse. Laoreet ullamcorper ipsum ipsum. Elit nisl vivamus fringilla phasellus condimentum erat hac iaculis egestas faucibus vulputate nonummy pretium pretium senectus aliquet, feugiat mauris ipsum. Taciti sociis mus orci. Posuere, ligula ac amet. Ridiculus primis sociosqu, diam.
+                  </p>
+                )
+              },
+              {
+                tabName: "14:00 - 15:30",
+                //tabIcon: Face,
+                tabContent: (
+                  <p className={classes.textCenter}>
+                    Vitae. Class semper pede senectus. Interdum arcu posuere Natoque. Nullam nisl integer morbi phasellus facilisi semper tempor condimentum velit eu. Potenti morbi dui suscipit inceptos pretium. Lacinia viverra Ullamcorper, mauris semper aliquam cras curae; elit justo est est penatibus proin mollis molestie vestibulum nullam auctor ante mollis. Lorem praesent pretium Montes metus mattis taciti et. Cum class ullamcorper pulvinar neque penatibus cubilia. Pellentesque suspendisse. Laoreet ullamcorper ipsum ipsum. Elit nisl vivamus fringilla phasellus condimentum erat hac iaculis egestas faucibus vulputate nonummy pretium pretium senectus aliquet, feugiat mauris ipsum. Taciti sociis mus orci. Posuere, ligula ac amet. Ridiculus primis sociosqu, diam.
+                  </p>
+                )
+              },
+              {
+                tabName: "16:00 - 17:30",
+                //tabIcon: Face,
+                tabContent: (
+                  <p className={classes.textCenter}>
+                    Vitae. Class semper pede senectus. Interdum arcu posuere Natoque. Nullam nisl integer morbi phasellus facilisi semper tempor condimentum velit eu. Potenti morbi dui suscipit inceptos pretium. Lacinia viverra Ullamcorper, mauris semper aliquam cras curae; elit justo est est penatibus proin mollis molestie vestibulum nullam auctor ante mollis. Lorem praesent pretium Montes metus mattis taciti et. Cum class ullamcorper pulvinar neque penatibus cubilia. Pellentesque suspendisse. Laoreet ullamcorper ipsum ipsum. Elit nisl vivamus fringilla phasellus condimentum erat hac iaculis egestas faucibus vulputate nonummy pretium pretium senectus aliquet, feugiat mauris ipsum. Taciti sociis mus orci. Posuere, ligula ac amet. Ridiculus primis sociosqu, diam.
+                  </p>
+                )
+              },
+              {
+                tabName: "12:00 - 12:30",
+                //tabIcon: Face,
+                tabContent: (
+                  <p className={classes.textCenter}>
+                    Vitae. Class semper pede senectus. Interdum arcu posuere Natoque. Nullam nisl integer morbi phasellus facilisi semper tempor condimentum velit eu. Potenti morbi dui suscipit inceptos pretium. Lacinia viverra Ullamcorper, mauris semper aliquam cras curae; elit justo est est penatibus proin mollis molestie vestibulum nullam auctor ante mollis. Lorem praesent pretium Montes metus mattis taciti et. Cum class ullamcorper pulvinar neque penatibus cubilia. Pellentesque suspendisse. Laoreet ullamcorper ipsum ipsum. Elit nisl vivamus fringilla phasellus condimentum erat hac iaculis egestas faucibus vulputate nonummy pretium pretium senectus aliquet, feugiat mauris ipsum. Taciti sociis mus orci. Posuere, ligula ac amet. Ridiculus primis sociosqu, diam.
+                  </p>
+                )
+              },
+              {
+                tabName: "13:00 - 13:30",
+                //tabIcon: Build,
+                tabContent: (
+                  <p className={classes.textCenter}>
+                    Vitae. Class semper pede senectus. Interdum arcu posuere Natoque. Nullam nisl integer morbi phasellus facilisi semper tempor condimentum velit eu. Potenti morbi dui suscipit inceptos pretium. Lacinia viverra Ullamcorper, mauris semper aliquam cras curae; elit justo est est penatibus proin mollis molestie vestibulum nullam auctor ante mollis. Lorem praesent pretium Montes metus mattis taciti et. Cum class ullamcorper pulvinar neque penatibus cubilia. Pellentesque suspendisse. Laoreet ullamcorper ipsum ipsum. Elit nisl vivamus fringilla phasellus condimentum erat hac iaculis egestas faucibus vulputate nonummy pretium pretium senectus aliquet, feugiat mauris ipsum. Taciti sociis mus orci. Posuere, ligula ac amet. Ridiculus primis sociosqu, diam.
+                  </p>
+                )
+              }
+              
+            ]}
+          />
+        
+        </GridItem>
+      </GridContainer>
     </div>
   );
 }
