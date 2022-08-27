@@ -22,9 +22,35 @@ import ProductSection from "/pages-sections/LandingPage-Sections/ProductSection.
 import TeamSection from "/pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "/pages-sections/LandingPage-Sections/WorkSection.js";
 
+import {
+  Timeline,
+  Events,
+  UrlButton,
+  ImageEvent,
+  TextEvent,
+  YouTubeEvent,
+  createTheme,
+  themes,
+} from "@merc/react-timeline";
+
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
+
+const customTheme = createTheme(themes.default, {
+  card: {
+    backgroundColor: "#efefef",
+  },
+  date: {
+    backgroundColor: "rebeccapurple",
+  },
+  marker: {
+    borderColor: "rebeccapurple",
+  },
+  timelineTrack: {
+    backgroundColor: "rebeccapurple",
+  },
+});
 
 export default function LandingPage(props) {
   const classes = useStyles();
@@ -44,36 +70,32 @@ export default function LandingPage(props) {
         {...rest}
       />
       <Parallax filter responsive image="/img/landing-bg.jpg">
-        <div className={classes.container}>
-          <GridContainer>
+        <div className={classNames(classes.container, classes.mainRaised3)}>
+          <GridContainer alignItems="center" justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <img
                 src="/img/logobsat.png"
                 alt="..."
                 className={classes.container}
               ></img>
-              <h4>
-                Seja bem vindo ao website da 1º Olimpíada Brasileira de Satélites MCTI - Regional Centro-Oeste, evento que acontecerá no dia 17 de Setembro de 2022, no câmpus 2 da Universidade Federal de Goiás! 
-             </h4>
+              <h2>Confirmação de presença</h2>
               <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="/confirmacao"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-people" />
-                CONFIRME SUA PRESENÇA!
-              </Button>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <ProductSection />
-          <TeamSection />
-          <WorkSection />
+          <h3 style={{ color: "white", textAlign: "center" }}>
+            <big>17 DE SETEMBRO DE 2022 -- 07:00 às 17:30</big>
+          </h3>
+          <div className={classes.container}>
+            <GridContainer spacing={0} alignItems="center" justify="center">
+              <GridItem align xs={12} sm={12} md={12}>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeM_TwSkPYlBoYzzIY-P9Hjle3vBmWVSVQ6mb-hsA8LmdjM2g/viewform?embedded=true" width="100%" height="800" frameBorder="0" marginHeight="0" marginWidth="0">Carregando…</iframe>
+              </GridItem>
+            </GridContainer>
+          </div>
         </div>
       </div>
       <Footer />

@@ -48,8 +48,10 @@
     "react-slick": "0.29.0",
     "sass": "1.54.4",
     "styled-components": "5.3.5",
+    "include-media": "^1.4.10",
     "watch": "^0.13.0",
-    "webpack": "5.74.0"
+    "webpack": "5.74.0",
+    "react-pdf": "^5.2.0"
   },
   "peerDependencies": {
     "react": ">=16.0.0",

@@ -32,11 +32,10 @@ export default function TeamSection() {
         <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://www.obsat.org.br/inscricoes/resultado_final_fase2.php"
                 target="_blank"
-                rel="noopener noreferrer"
               >
-                <i className="fas fa-play" />
+                <i className="fas fa-people" />
                 Ver todas as equipes!
               </Button>
       </div>

@@ -37,32 +37,23 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link href="/teste">
+            <Link href="/cronograma">
               <a className={classes.dropdownLink}>CRONOGRAMA</a>
             </Link>,
-            <Link href="#">
-              <a className={classes.dropdownLink}>MAPA - SAMAMBAIA (UFG)</a>
+            <Link href="/mapa#mapa">
+              <a className={classes.dropdownLink}>MAPA</a>
             </Link>,
-            <a
-              href="#"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              LOCALIZAÇÃO
-            </a>,
-                        <Link href="#">
-                        <a className={classes.dropdownLink}>GANHADORES</a>
-                      </Link>,
+            <Link href="/mapa#onibus">
+              <a className={classes.dropdownLink}>PONTOS DE ONIBUS</a>
+            </Link>,
+            <Link href="/mapa#restaurantes">
+            <a className={classes.dropdownLink}>RESTAURANTES PRÓXIMOS</a>
+          </Link>,
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href="#"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
+        <Button href="/aovivo" color="transparent" className={classes.navLink}>
           <Icon className={classes.icons}>unarchive</Icon> ACOMPANHAR AO VIVO
         </Button>
       </ListItem>

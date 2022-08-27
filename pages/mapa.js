@@ -18,10 +18,16 @@ import Parallax from "/components/Parallax/Parallax.js";
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
-import ProductSection from "/pages-sections/LandingPage-Sections/ProductSection.js";
+import MapasSection from "/pages-sections/LandingPage-Sections/MapasSection.js";
 import TeamSection from "/pages-sections/LandingPage-Sections/TeamSection.js";
-import WorkSection from "/pages-sections/LandingPage-Sections/WorkSection.js";
+import InfoArea from "/components/InfoArea/InfoArea.js";
+import {
+  CalendarToday,
+  MapOutlined,
+  PeopleAltOutlined,
+} from "@material-ui/icons";
 
+import WorkSection from "/pages-sections/LandingPage-Sections/WorkSection.js";
 
 import {
   Timeline,
@@ -31,8 +37,8 @@ import {
   TextEvent,
   YouTubeEvent,
   createTheme,
-  themes
-} from '@merc/react-timeline';
+  themes,
+} from "@merc/react-timeline";
 
 const dashboardRoutes = [];
 
@@ -40,19 +46,18 @@ const useStyles = makeStyles(styles);
 
 const customTheme = createTheme(themes.default, {
   card: {
-    backgroundColor: '#efefef',
+    backgroundColor: "#efefef",
   },
   date: {
-    backgroundColor: 'rebeccapurple',
+    backgroundColor: "rebeccapurple",
   },
   marker: {
-    borderColor: 'rebeccapurple',
+    borderColor: "rebeccapurple",
   },
   timelineTrack: {
-    backgroundColor: 'rebeccapurple',
+    backgroundColor: "rebeccapurple",
   },
 });
-
 
 export default function LandingPage(props) {
   const classes = useStyles();
@@ -73,53 +78,31 @@ export default function LandingPage(props) {
       />
       <Parallax filter responsive image="/img/landing-bg.jpg">
         <div className={classNames(classes.container, classes.mainRaised3)}>
-          <GridContainer alignItems="center" justify="center" >
+          <GridContainer alignItems="center" justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <img
                 src="/img/logobsat.png"
                 alt="..."
                 className={classes.container}
               ></img>
-              <h2>
-               Cronograma
-             </h2>
+              <h2>Sobre o evento</h2>
               <br />
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
+
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-        <h3 style={{ color: "white", textAlign: "center"}}>
-<big>17 DE SETEMBRO DE 2022 -- 07:00 às 17:30</big>
-</h3>
-<div className={classes.container}>
-<GridContainer spacing={0} alignItems="center" justify="center" >
-<GridItem align xs={12} sm={12} md={12}>
-  <Timeline className={classes.mainRaised2} theme={customTheme}>
-    <Events>
-      <TextEvent date="07:00 - 08:00" text="**Credenciamento**" />
-      <TextEvent date="08:00 - 09:00" text="**Montagem das Mesas e dos Nanossatélites <br><br>Local: Tenda das Equipes **" />
-      <TextEvent date="09:00 - 12:00" text="**Avaliação Técnica dos Satélites <br><br>Local: Sala de avaliação e tendas das equipes**" />
-      <TextEvent date="12:00 - 13:00" text="**Apresentação dos Pitches <br><br>Local: Auditório**" />
-      <TextEvent date="13:00 - 14:00" text="**Almoço**" />
-      <TextEvent date="14:00 - 14:30" text="**Divulgação do Resultado Final <br><br>Local: Auditório**" />
-      <TextEvent date="14:50 - 15:00" text="**Integração dos satélites no balão**" />
-      <TextEvent date="15:00 - 16:00" text="**Lançamento do balão <br><br>Local: Pista de lançamento**" />
-      <TextEvent date="16:00 - 16:30"  text="**Cerimônia de premiação  <br><br>Local: Auditório**" />
-      <TextEvent date="16:30 - 17:30"  text="**Rastreamento e Recuperação do Balão Estratosférico e dos Satélites**" />
-    </Events>
-  </Timeline>
-</GridItem>
-</GridContainer>
-</div>
-
+          <MapasSection />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7842.158662499647!2d-49.26015163030897!3d-16.60203485152764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e1!3m2!1spt-BR!2sbr!4v1661607873306!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="450"
+          ></iframe>
         </div>
       </div>
       <Footer />
     </div>
   );
 }
-
-
-
