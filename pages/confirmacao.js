@@ -3,6 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import Analytics from '/components/Analytics/Analytics.js'
 
 // @material-ui/icons
 
@@ -95,6 +96,7 @@ export default function LandingPage(props) {
               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeM_TwSkPYlBoYzzIY-P9Hjle3vBmWVSVQ6mb-hsA8LmdjM2g/viewform?embedded=true" width="100%" height="800" frameBorder="0" marginHeight="0" marginWidth="0">Carregando…</iframe>
               </GridItem>
             </GridContainer>
+            <Analytics />
           </div>
         </div>
       </div>

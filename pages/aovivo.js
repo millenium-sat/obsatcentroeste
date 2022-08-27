@@ -3,6 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import Analytics from '/components/Analytics/Analytics.js'
 
 // @material-ui/icons
 
@@ -137,6 +138,7 @@ export default function LandingPage(props) {
             />
 
             </GridContainer>
+            <Analytics />
           </div>
         </div>
       </div>

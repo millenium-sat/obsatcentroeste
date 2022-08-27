@@ -14,7 +14,7 @@ import GridItem from "/components/Grid/GridItem.js";
 import Button from "/components/CustomButtons/Button.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Parallax from "/components/Parallax/Parallax.js";
-
+import Analytics from '/components/Analytics/Analytics.js'
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
@@ -67,6 +67,7 @@ export default function LandingPage(props) {
               </Button>
             </GridItem>
           </GridContainer>
+          <Analytics />
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
