@@ -94,40 +94,55 @@ export default function LandingPage(props) {
               <GridItem align xs={12} sm={12} md={12}>
                 <Timeline className={classes.mainRaised2} theme={customTheme}>
                   <Events>
-                    <TextEvent date="07:00 - 08:00" text="**Credenciamento**" />
-                    <TextEvent
+                    <ImageEvent
                       date="08:00 - 09:00"
-                      text="**Montagem das Mesas e dos Nanossatélites <br><br>Local: Tenda das Equipes **"
+                      text="**Credenciamento das equipes <br><br>Local: Entrada da EMAC**"     
                     />
-                    <TextEvent
-                      date="09:00 - 12:00"
-                      text="**Avaliação Técnica dos Satélites <br><br>Local: Sala de avaliação e tendas das equipes**"
+                    <ImageEvent
+                      date="09:00 - 9:30"
+                      text="**Cerimônia de Abertura <br><br>Local: Auditório<br>Aberto para Equipes e Público**"
                     />
-                    <TextEvent
-                      date="12:00 - 13:00"
-                      text="**Apresentação dos Pitches <br><br>Local: Auditório**"
+                    <ImageEvent
+                      date="09:30 - 10:00"
+                      text="**Setup da área de trabalho**"
                     />
-                    <TextEvent date="13:00 - 14:00" text="**Almoço**" />
-                    <TextEvent
-                      date="14:00 - 14:30"
-                      text="**Divulgação do Resultado Final <br><br>Local: Auditório**"
+                    <ImageEvent 
+                      date="10:00 - 11:30" 
+                      text="**Avaliação das Equipes nas suas respectivas Áreas de Trabalho <br><br>Local: Tenda das Equipes<br>Aberto para Equipes participantes**"
                     />
-                    <TextEvent
-                      date="14:50 - 15:00"
-                      text="**Integração dos satélites no balão**"
+                    <ImageEvent
+                      date="11:30 - 13:00"
+                      text="**Apresentação dos Pitches<br><br>Local: Auditório<br>Aberto para Equipes e Público**"
                     />
-                    <TextEvent
-                      date="15:00 - 16:00"
-                      text="**Lançamento do balão <br><br>Local: Pista de lançamento**"
+                    <ImageEvent
+                      date="13:00 - 14:00"
+                      text="**Intervalo para almoço**"
                     />
-                    <TextEvent
+                    <ImageEvent
+                      date="14:00 - 15:00"
+                      text="**Lançamento das equipes selecionadas <br><br>Local: Pista de lançamento<br>Aberto para Equipes e Público**"
+                    />
+                    <ImageEvent
+                      date="15:00 - 15:30"
+                      text="**Palestra: Conhecendo o grupo SkyRocket<br>Palestrante: SkyRocket<br>Resumo:** Nesta palestra, iremos conhecer sobre o grupo de construção de foguetes SkyRocket, criado por estudantes de engenharia do Instituto Federal de Goiás."
+                    />
+                   <ImageEvent
+                      date="15:30 - 16:00"
+                      text="**Palestra:  Passos da construção de um satélite LEO para a análise de imagens.<br>Palestrante: Yovani Adolfo Villanueva<br>Resumo:** Com foco na parte prática e com o conhecimento de Yovani, doutorando em matemática e já tendo participado de um lançamento orbital de um satélite , iremos abordar os passos necessários para a construção de um satélite LEO para a análise de imagens."
+                   
+                    />
+                   <ImageEvent
                       date="16:00 - 16:30"
-                      text="**Cerimônia de premiação  <br><br>Local: Auditório**"
+                      text="**Palestra: Conhecendo o grupo Pequi Mecânico<br>Palestrante: Pequi Mecânico<br>Resumo:** Nesta palestra, iremos conhecer sobre o grupo de robótica Pequi Mecânico, criado por estudantes de engenharia da Universidade Federal de Goiás."
                     />
-                    <TextEvent
-                      date="16:30 - 17:30"
-                      text="**Rastreamento e Recuperação do Balão Estratosférico e dos Satélites**"
-                    />
+                   <ImageEvent
+                      date="16:30 - 17:00"
+                      text="**Apresentação SuperTime - Equipes Millenium e Goyasat**"
+                    />                  
+                   <ImageEvent
+                      date="17:00 - 17:30"
+                      text="**Cerimônia de Premiação e Encerramento<br><br>Local: Auditório<br>Aberto para Equipes e Público**"
+                    />         
                   </Events>
                 </Timeline>
               </GridItem>
