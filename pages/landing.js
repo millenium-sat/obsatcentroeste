@@ -53,7 +53,7 @@ export default function LandingPage(props) {
                 className={classes.container}
               ></img>
               <h4>
-                Seja bem vindo ao website da 1º Olimpíada Brasileira de Satélites MCTI - Regional Centro-Oeste, evento que acontecerá no dia 17 de Setembro de 2022, no câmpus 2 da Universidade Federal de Goiás! 
+                Seja bem vindo ao website da 1º Olimpíada Brasileira de Satélites MCTI - Regional Centro-Oeste, evento que acontecerá no dia 17 de Setembro de 2022, na EMAC - Escola de Música e Artes Cênicas - câmpus 2 da Universidade Federal de Goiás! 
              </h4>
               <br />
               <Button

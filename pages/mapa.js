@@ -96,7 +96,7 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <MapasSection />
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7842.158662499647!2d-49.26015163030897!3d-16.60203485152764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e1!3m2!1spt-BR!2sbr!4v1661607873306!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.943581851896!2d-49.26051911943647!3d-16.605422191264058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef32b61f9c23b%3A0x76f835e6bfb2a21a!2sEMAC%20-%20Escola%20de%20M%C3%BAsica%20e%20Artes%20C%C3%AAnicas%20da%20UFG!5e1!3m2!1spt-BR!2sbr!4v1663332818519!5m2!1spt-BR!2sbr"
             width="100%"
             height="450"
           ></iframe>

@@ -39,7 +39,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Onde acontecerá?"
-              description="O evento será realizado no Câmpus 2 da Universidade Federal de Goiás, em Goiânia - GO."
+              description="O evento será realizado na EMAC - Escola de Música e Artes Cênicas - Câmpus 2 da Universidade Federal de Goiás, em Goiânia - GO."
               icon={MapOutlined}
               iconColor="info"
               vertical
