@@ -131,11 +131,7 @@ export default function LandingPage(props) {
           <div className={classes.container}>
             <GridContainer spacing={0} alignItems="center" justify="center">
 
-              <LaunchCountdown days={obtenhaDiasAteEvento('dias')}
-                             hours={obtenhaDiasAteEvento('horas')}
-                             minutes={obtenhaDiasAteEvento('minutos')}
-                             seconds={obtenhaDiasAteEvento('segundos')}
-            />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GIn3B8YYem0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             </GridContainer>
             <Analytics />
